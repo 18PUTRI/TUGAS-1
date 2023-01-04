@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Operator Penugasan</title>
+</head>
+<b>BILANGAN PRIMA DAN PENGULANGAN:</b><br>
+<body>
+    <script>
+        document.write ("======================================================= <br>")
+        document.write ("PERULANGAN DENGAN DO WHILE<br>")
+        document.write ("======================================================= <br>")
+        document.write (">>> for <<< <br>")
+        {
+            
+        }
+    </script>
+    <script>
+      
+    for(let i = 5; i < 20; i++){
+    document.write("<p>Perulangan ke-" + i + "</p>")
+    
+}
+document.write (">>> for <<< <br>")
+
+function cekPrima( n ) {
+    var max = Math.sqrt(n);
+    for( var i = 2;  i <= max;  i++ ) {
+        if( n % i == 0 )
+            return false;
+    }
+    return true;
+}
+for( var n = 4;  n < 8;  n++ ) {
+        if( cekPrima(n) ) {
+  document.write("bilangan prima =" + n + '<BR>' );
+ }
+}
+    </script>
+
+    <script>
+{
+    document.write (">>> for <<< <br>")
+        for (var i = 3; i < 21; i++) 
+         
+	document.write("Halo javascript 1 FOR: " + i +"<br>");
+} 	
+document.write (">>> for <<< <br>")	
+var j = 5; 
+	while ( j < 21 ) { 
+	document.write("Halo javascript 2 WHILE : " + j +"<br>"); 
+	j += 1; 
+} 
+document.write (">>> for <<< <br>")			
+var k = 5; do { 
+	document.write("Halo javascript 3 DO WHILE: " + k +"<br>"); 
+	k++; 
+} while ( k < 21 );
+        document.write ("======================================================= <br>")
+        document.write ("BILANGAN PRIMA<br>")
+        document.write ("======================================================= <br>")
+        document.write (">>> for <<< <br>")
+ var urut=0;
+for (var i = 1; i <= 30; i++) {
+	var tanda = 0;
+	for (var j = 2; j < i; j++) {
+		if (i % j == 0) {
+			tanda = 1;
+			break;
+		}
+	}
+
+if (i > 1 && tanda == 0) {
+	urut++;
+	document.write("Bilangan Prima ke - "+ urut +" : " + i + "<br>");
+	}
+}
+    </script>
+
+</body>
+
+</html>
